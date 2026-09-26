@@ -1,0 +1,15 @@
+appId: com.domag.higio.preview
+name: Onboarding i one-tap evidentiranje
+---
+- launchApp:
+    clearState: true
+- assertVisible: 'Tvoj Higio, tvoj ritam'
+- tapOn: 'Započni s.*aktivnosti'
+- assertVisible: 'Danas'
+- tapOn:
+    text: 'Pranje zubi'
+    index: 0
+- assertVisible: 'Bravo, spremljeno!'
+- assertVisible: 'Evidentirano u.*po zagrebačkom vremenu'
+- tapOn: 'Poništi'
+- assertNotVisible: 'Bravo, spremljeno!'

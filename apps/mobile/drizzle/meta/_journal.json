@@ -1,0 +1,27 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1785054729638,
+      "tag": "0000_fantastic_vance_astro",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1785058264695,
+      "tag": "0001_lean_silver_centurion",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1789058014223,
+      "tag": "0002_black_lethal_legion",
+      "breakpoints": true
+    }
+  ]
+}

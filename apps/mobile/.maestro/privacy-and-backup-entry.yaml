@@ -1,0 +1,11 @@
+appId: com.domag.higio.preview
+name: Ulaz u privatnost i backup
+---
+- launchApp
+- tapOn: 'Više'
+- tapOn: 'Podatci i privatnost'
+- assertVisible: 'Tvoja lokalna sigurnosna kopija'
+- assertVisible: 'Izvezi podatke'
+- assertVisible: 'Vrati iz kopije'
+- assertVisible: 'Zaključaj Higio'
+- assertVisible: 'Zaštiti privatni prikaz'

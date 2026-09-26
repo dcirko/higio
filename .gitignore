@@ -1,0 +1,25 @@
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local Codex/agent scratch files
+.codex-staging/
+.claude/
+
+# Credentials, local data and build outputs
+.env
+.env.*
+!.env.example
+*.keystore
+*.db
+*.db-*
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.log
+*.apk
+*.aab
