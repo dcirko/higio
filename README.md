@@ -37,14 +37,13 @@ zaštitu snimanja zaslona ni izvoz/povrat sigurnosne kopije.
 Za izgradnju web verzije:
 
 ```sh
-npx expo export --platform web
+npm run build:web
 ```
 
 Izlaz je u `apps/mobile/dist`. Javni web demo još nije objavljen.
-GitHub repozitorij prikazuje izvorni kod; za korištenje u pregledniku treba
-zasebno objaviti web build i dodati poveznicu u README i polje About.
-Na GitHub Pages treba podesiti putanju `/higio` i povrat na `index.html`
-za rute jednostranične aplikacije.
+Repozitorij sadrži `netlify.toml` s build postavkama i SPA fallbackom.
+Za objavu povezati `dcirko/higio` u Netlifyju s granom `main`.
+[Plan objave i provjere](docs/NETLIFY_DEPLOYMENT.md).
 
 ## Dosadašnje faze i provjere
 

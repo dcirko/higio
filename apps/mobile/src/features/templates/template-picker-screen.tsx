@@ -1,6 +1,6 @@
 import { router, type Href } from 'expo-router';
 import { useMemo, useState } from 'react';
-import { Pressable, StyleSheet, View } from 'react-native';
+import { Platform, Pressable, StyleSheet, View } from 'react-native';
 
 import { useActivityStore } from '@/data/activity-store-context';
 import { useOnboarding } from '@/data/onboarding-store-context';
@@ -141,8 +141,9 @@ export default function TemplatePickerScreen({
             Privatno i bez registracije
           </AppText>
           <AppText style={{ color: theme.colors.infoText }} variant="caption">
-            Podatci ostaju lokalno na ovom uređaju. Za početak ti ne treba
-            internet ni račun.
+            {Platform.OS === 'web'
+              ? 'Podatci se čuvaju samo u ovom pregledniku. Nema sinkronizacije s mobitelom; brisanje podataka preglednika briše evidenciju. Web verzija nema obavijesti, biometriju ni sigurnosne kopije.'
+              : 'Podatci ostaju lokalno na ovom uređaju. Za početak ti ne treba internet ni račun.'}
           </AppText>
         </View>
       ) : null}

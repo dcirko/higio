@@ -9,6 +9,7 @@ Thumbs.db
 # Local Codex/agent scratch files
 .codex-staging/
 .claude/
+.netlify/
 
 # Credentials, local data and build outputs
 .env

@@ -1,0 +1,8 @@
+[build]
+  base = "apps/mobile"
+  command = "npm run build:web"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+  APP_VARIANT = "production"
