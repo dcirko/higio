@@ -4,11 +4,29 @@
 
 - [x] Provjeriti postojeći web preview i upute Expo SDK-a 57.
 - [x] Dodati Netlify build konfiguraciju i SPA fallback.
-- [ ] Izgraditi produkcijski web bundle i provjeriti glavne tokove u pregledniku.
-- [ ] Commitati i pushati konfiguraciju u `dcirko/higio`.
-- [ ] Povezati Netlify projekt i objaviti web aplikaciju.
-- [ ] Provjeriti javnu adresu, izravne rute i trajnost podataka nakon osvježavanja.
-- [ ] Dodati potvrđenu javnu poveznicu u README.
+- [x] Izgraditi produkcijski web bundle i lokalno provjeriti onboarding, unos i trajnost.
+- [x] Commitati i pushati konfiguraciju u `dcirko/higio` (`6b838a2`).
+- [x] Objaviti web aplikaciju na Netlify računu `dcirko` izravnim uploadom.
+- [x] Provjeriti javnu adresu, HTTP odgovore ruta i javni unos aktivnosti.
+- [x] Dodati potvrđenu javnu poveznicu u README.
+- [ ] Razjasniti povremeni prazan prikaz pri ponovnom učitavanju u ugrađenom pregledniku.
+- [ ] Opcionalno povezati GitHub za automatske buduće objave.
+
+## Rezultat objave i provjere
+
+- Javna adresa: https://higio-dcirko.netlify.app/
+- Netlify projekt: `higio-dcirko`, ID `67971b1d-8c1f-4c9f-b92b-1887599c7209`.
+- Objavljeno 29. 9. 2026. preko Netlify Dropa; deploy ID `6abbc8f425701e62782e48b4`.
+- Produkcijski build, TypeScript i Prettier provjera izmijenjenog TSX-a i package.json prolaze.
+- Lokalno provjereni onboarding, unos i očuvanje unosa nakon osvježavanja.
+- Na javnoj adresi provjereni onboarding i unos: napredak prelazi s 0/3 na 1/3.
+- HTTPS rute `/`, `/dog` i `/history` vraćaju 200 i Higio HTML.
+- JavaScript bundle 30. 9. vraća 200, ispravan MIME tip i 2.814.328 bajtova.
+- Ponovna UI provjera u ugrađenom pregledniku nailazi na timeout i prazan root,
+  bez zabilježene JavaScript greške. Očuvanje zapisa nakon osvježavanja na javnoj
+  domeni zato nije potvrđeno; uzrok nije utvrđen. Chrome nije dostupan alatu.
+- GitHub import u Netlify sučelju nije nastavio nakon klika; automatska objava
+  nije uključena. Ne kreirati drugi projekt radi povezivanja repozitorija.
 
 ## Konfiguracija
 

@@ -1,5 +1,7 @@
 # Higio
 
+**[Isprobaj Higio u pregledniku](https://higio-dcirko.netlify.app/)**
+
 Higio je lokalno-prva mobilna aplikacija za brzo praćenje osobne higijene,
 njege, ponavljajućih rutina i dnevnog unosa suplemenata.
 
@@ -40,9 +42,12 @@ Za izgradnju web verzije:
 npm run build:web
 ```
 
-Izlaz je u `apps/mobile/dist`. Javni web demo još nije objavljen.
+Izlaz je u `apps/mobile/dist`. Web preview objavljen je na
+[higio-dcirko.netlify.app](https://higio-dcirko.netlify.app/).
 Repozitorij sadrži `netlify.toml` s build postavkama i SPA fallbackom.
-Za objavu povezati `dcirko/higio` u Netlifyju s granom `main`.
+Trenutačna objava napravljena je izravnim uploadom produkcijskog builda.
+Automatska objava pri pushu nije uključena; za nju treba povezati postojeći
+Netlify projekt `higio-dcirko` s repozitorijem `dcirko/higio`, granom `main`.
 [Plan objave i provjere](docs/NETLIFY_DEPLOYMENT.md).
 
 ## Dosadašnje faze i provjere
