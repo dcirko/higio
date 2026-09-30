@@ -9,7 +9,7 @@
 - [x] Objaviti web aplikaciju na Netlify računu `dcirko` izravnim uploadom.
 - [x] Provjeriti javnu adresu, HTTP odgovore ruta i javni unos aktivnosti.
 - [x] Dodati potvrđenu javnu poveznicu u README.
-- [ ] Razjasniti povremeni prazan prikaz pri ponovnom učitavanju u ugrađenom pregledniku.
+- [x] Potvrditi sačuvan zapis nakon ponovnog učitavanja javne aplikacije.
 - [ ] Opcionalno povezati GitHub za automatske buduće objave.
 
 ## Rezultat objave i provjere
@@ -22,9 +22,11 @@
 - Na javnoj adresi provjereni onboarding i unos: napredak prelazi s 0/3 na 1/3.
 - HTTPS rute `/`, `/dog` i `/history` vraćaju 200 i Higio HTML.
 - JavaScript bundle 30. 9. vraća 200, ispravan MIME tip i 2.814.328 bajtova.
-- Ponovna UI provjera u ugrađenom pregledniku nailazi na timeout i prazan root,
-  bez zabilježene JavaScript greške. Očuvanje zapisa nakon osvježavanja na javnoj
-  domeni zato nije potvrđeno; uzrok nije utvrđen. Chrome nije dostupan alatu.
+- Ugrađeni preglednik tijekom provjere imao je sporo učitavanje i timeoute,
+  bez zabilježene JavaScript greške. Nakon učitavanja 30. 9. prikazana je aplikacija
+  i sačuvan zapis od 29. 9. u 19:26. Zapis je potvrđen na kartici i u Povijesti.
+  Nije bila potrebna promjena koda. Chrome nije bio dostupan alatu.
+- Snimka provjere: lokalni `apps/mobile/artifacts/netlify-live-history.png`.
 - GitHub import u Netlify sučelju nije nastavio nakon klika; automatska objava
   nije uključena. Ne kreirati drugi projekt radi povezivanja repozitorija.
 
